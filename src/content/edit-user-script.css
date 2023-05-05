@@ -1,5 +1,17 @@
+:root {
+  --brightest-color: white;
+  --modal-color: #FCFCF9;
+  --item-color: whitesmoke;
+  --item-hover-color: #E5E5E5;
+  --background-color: lightgrey;
+  --border-color: #CCC;
+  --modal-splash-color: #A3A3A3;
+  --tabs-color: grey;
+}
+
+
 html, body {
-  background: lightgrey;
+  background: var(--background-color);
   height: 100%;
   margin: 0;
   overflow: hidden;
@@ -14,7 +26,7 @@ body #modal-splash {
 }
 
 #modal-splash {
-  background-color: #A3A3A363;
+  background-color: var(--modal-splash-color);
   position: absolute;
   top: 0;
   left: 0;
@@ -23,15 +35,15 @@ body #modal-splash {
   z-index: 100;
 }
 #modal {
-  background-color: #FCFCF9;
-  border: 1px solid #CCC;
+  background-color: var(--modal-color);
+  border: 1px solid var(--border-color);
   border-radius: 2px;
   margin: 25% auto;
   padding: 1rem;
   width: 30em;
 }
 #modal header {
-  border-bottom: 1px solid #CCC;
+  border-bottom: 1px solid var(--border-color);
   font-size: 25px;
   margin: 0 0 10px 0;
   padding-bottom: 10px;
@@ -53,7 +65,7 @@ body #modal-splash {
   white-space: nowrap;
 }
 #tabs .tab {
-  background: grey;
+  background: var(--tabs-color);
   cursor: default;
   display: inline-block;
   font-family: arial, sans-serif;
@@ -64,7 +76,7 @@ body #modal-splash {
   -moz-user-select: none;
 }
 #tabs .tab.active {
-  background: white;
+  background: var(--brightest-color);
 }
 #tabs .tab.dirty::after {
   content: "*";
@@ -77,11 +89,11 @@ body #modal-splash {
   display: flex;
   align-items: center;
   padding: 0 8px;
-  background: whitesmoke;
+  background: var(--item-color);
   -moz-user-select: none;
 }
 .command-item:hover {
-  background: #e5e5e5;
+  background: var(--item-hover-color);
 }
 
 body, #editor, #editor textarea {
@@ -92,7 +104,7 @@ body, #editor, #editor textarea {
 }
 #editor {
   height: 0;
-  background: white;
+  background: var(--brightest-color);
 }
 .CodeMirror {
   height: 100% !important;
