@@ -1,0 +1,53 @@
+
+
+.CodeMirror-lines, .CodeMirror-vscrollbar {
+    background-color: #282a36;
+    color: #f8f8f2 !important;
+}
+
+contenteditable {
+    caret-color: #f8f8f2;
+}
+
+html, body, .command-item {
+    background-color: #1d1e27;
+    color: #f8f8f2 !important;
+}
+
+#tabs, .tab.active, .CodeMirror-gutter, .command-item:hover {
+    background: #3c3f51 !important;
+}
+
+.cm-comment {
+    color: #ffb86c !important;
+}
+
+.cm-keyword {
+    color: #bd93f9 !important;
+}
+
+.cm-def {
+    color: #6272a4 !important;
+}
+
+.cm-operator, .cm-variable, .cm-property, #text {
+    color: #f8f8f2 !important;
+}
+
+.cm-variable-2 {
+    color: #8be9fd !important;
+}
+
+.cm-string {
+    color: #50fa7b !important;
+}
+
+.cm-string-2 {
+    color: #ffb86c !important;
+}
+
+.cm-number {
+    color: #ff5555 !important;
+}
+
+
